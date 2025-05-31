@@ -7,8 +7,8 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview --host",
-    "frame01build": "tsc && vite build frame01",
-    "frame01preview": "vite preview frame01 --host"
+    "shapes01build": "tsc && vite build shapes01",
+    "shapes01preview": "vite preview shapes01 --host"
   },
   "devDependencies": {
     "typescript": "^5.0.2",
