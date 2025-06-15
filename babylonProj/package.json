@@ -5,13 +5,28 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview --host",
+    "shapes01build": "vite build shapes01",
+    "shapes01preview": "vite preview shapes01 --host",
+    "villagebuild": "vite build village",
+    "villagepreview": "vite preview village --host",
+    "motion03build": "vite build motion03",
+    "motion03preview": "vite preview motion03 --host",
     "collision03build": "vite build collision03",
-    "collision03preview": "vite preview collision03 --host"
+    "collision03preview": "vite preview collision03 --host",
+    "gui01build": "vite build gui01",
+    "gui01preview": "vite preview gui01 --host",
+    "gui04build": "vite build gui04",
+    "gui04preview": "vite preview gui04 --host"
+
   },
   "devDependencies": {
     "typescript": "^5.0.2",
     "vite": "^4.4.0"
+  },
+  "dependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0"
   }
 }
