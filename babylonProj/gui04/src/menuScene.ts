@@ -122,7 +122,7 @@ import {
       button2: GUI.Button;
       skybox: Mesh;
       hemiLight: HemisphericLight;
-      camera: Camera;
+      //camera: Camera;
     }
   
     //let that: SceneData = { scene: new Scene(engine) };
@@ -138,7 +138,7 @@ import {
     let skybox = createSkybox(scene);
     //Scene Lighting & Camera
     let hemiLight = createHemiLight(scene);
-    let camera = createArcRotateCamera(scene);
+    //let camera = createArcRotateCamera(scene);
     
     let that: SceneData = {
       scene,
@@ -149,7 +149,7 @@ import {
       button2,
       skybox,
       hemiLight,
-      camera
+      //camera
     };
     
     return that;

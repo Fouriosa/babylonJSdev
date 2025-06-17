@@ -21,3 +21,4 @@ createRunScene(startScene);
 eng.runRenderLoop(() => {
   startScene.scene.render();
 });
+
