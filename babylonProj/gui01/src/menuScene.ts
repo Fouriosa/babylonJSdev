@@ -1,4 +1,3 @@
-
 import setSceneIndex from "./index";
 
 import {
@@ -18,7 +17,6 @@ import {
     Sound
   } from "@babylonjs/core";
   import * as GUI from "@babylonjs/gui";
- 
   //----------------------------------------------------
 
   function createText(scene: Scene, theText: string, x: string, y: string, s: string, c: string, advtex) {
@@ -76,13 +74,13 @@ import {
   function createSkybox(scene: Scene) {
     //Skybox
     const skybox = MeshBuilder.CreateBox("skyBox", {size:150}, scene);
-	  const skyboxMaterial = new StandardMaterial("skyBox", scene);
-	  skyboxMaterial.backFaceCulling = false;
-	  skyboxMaterial.reflectionTexture = new CubeTexture("textures/skybox", scene);
-	  skyboxMaterial.reflectionTexture.coordinatesMode = Texture.SKYBOX_MODE;
-	  skyboxMaterial.diffuseColor = new Color3(0, 0, 0);
-	  skyboxMaterial.specularColor = new Color3(0, 0, 0);
-	  skybox.material = skyboxMaterial;
+      const skyboxMaterial = new StandardMaterial("skyBox", scene);
+      skyboxMaterial.backFaceCulling = false;
+      skyboxMaterial.reflectionTexture = new CubeTexture("textures/skybox", scene);
+      skyboxMaterial.reflectionTexture.coordinatesMode = Texture.SKYBOX_MODE;
+      skyboxMaterial.diffuseColor = new Color3(0, 0, 0);
+      skyboxMaterial.specularColor = new Color3(0, 0, 0);
+      skybox.material = skyboxMaterial;
     return skybox;
   }
 
